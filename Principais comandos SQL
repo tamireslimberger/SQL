@@ -1,0 +1,80 @@
+PRINCIPAIS COMANDOS SQL
+
+SELECT: Recuperar dados de uma tabela.
+SELECT coluna1, coluna2 FROM tabela;
+
+INSERT INTO: Adicionar novos dados em uma tabela.
+INSERT INTO tabela (coluna1, coluna2) VALUES (valor1, valor2);
+
+UPDATE: Modificar dados existentes.
+UPDATE tabela SET coluna1 = valor1 WHERE condição;
+
+DELETE: Remover dados de uma tabela.
+DELETE FROM tabela WHERE condição;
+
+
+Filtrando e Ordenando Dados
+
+WHERE: Aplicar condições para filtrar resultados.
+SELECT * FROM tabela WHERE condição;
+
+ORDER BY: Ordenar os resultados.
+SELECT * FROM tabela ORDER BY coluna ASC|DESC;
+
+
+Funções Agregadas
+
+COUNT: Contar o número de linhas.
+SELECT COUNT(*) FROM tabela;
+
+SUM: Somar valores de uma coluna.
+SELECT SUM(coluna) FROM tabela;
+
+AVG: Calcular a média dos valores de uma coluna.
+SELECT AVG(coluna) FROM tabela;
+
+MIN e MAX: Encontrar o valor mínimo ou máximo.
+SELECT MIN(coluna), MAX(coluna) FROM tabela;
+
+
+Juntando Tabelas
+
+JOIN: Combinar dados de duas ou mais tabelas.
+SELECT * FROM tabela1 JOIN tabela2 ON tabela1.coluna = tabela2.coluna;
+INNER JOIN: Retorna apenas as linhas com correspondência em ambas as tabelas.
+LEFT JOIN: Retorna todas as linhas da tabela da esquerda e as linhas correspondentes da tabela da direita.
+
+Criação e Modificação de Tabelas
+CREATE TABLE: Criar uma nova tabela.
+CREATE TABLE tabela (
+    coluna1 tipo,
+    coluna2 tipo
+);
+
+ALTER TABLE: Adicionar, modificar ou excluir colunas.
+ALTER TABLE tabela ADD coluna tipo;
+
+DROP TABLE: Excluir uma tabela.
+DROP TABLE tabela;
+
+
+Restrições e Índices
+
+PRIMARY KEY: Identificador único para cada linha.
+FOREIGN KEY: Define uma relação entre duas tabelas.
+INDEX: Melhora a velocidade das consultas.
+
+
+Visualizando Estruturas e Dados
+
+DESCRIBE: Mostrar a estrutura de uma tabela.
+DESCRIBE tabela;
+
+SHOW TABLES: Listar todas as tabelas em um banco de dados.
+SHOW TABLES;
+
+
+Sempre faça backup: Antes de realizar operações destrutivas.
+
+
+
